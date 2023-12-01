@@ -26,6 +26,7 @@ function Home() {
         <ConnectButton />
       </div>
       <CenteredContainer>
+        <a href="https://passport.meter.io">Bridge any tokens to receive MTR airdrop</a>
         <h2 style={{ fontFamily: '"Roboto", sans-serif' }}>Ethscriber</h2>
         <div
           style={{
