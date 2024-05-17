@@ -30,10 +30,10 @@ jobs:
           command: NODE_ENV=production npm run build
       - run:
           name: s3 sync
-          command: aws s3 sync ./out/ s3://mtrscriber.meter.io/ --delete
+          command: aws s3 sync ./out/ s3://mtrscriber-meter-io/ --delete
       - run:
           name: invalidation
-          command: aws cloudfront create-invalidation --distribution-id E13E8JPD55LE28 --paths "/*"
+          command: aws cloudfront create-invalidation --distribution-id E2A196EABNII7M --paths "/*"
 workflows:
   fresh_deploy:
     jobs:
